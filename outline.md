@@ -1,0 +1,45 @@
+# 📚 面经知识大纲
+
+> 本文件由同步脚本自动维护，请勿手动修改。
+
+- 📁 **frontend**
+  - 📁 **css**
+    - 📁 **css_preprocessor**
+      - 📄 [请介绍 Sass 及其主要特性和优势。](contents/frontend/css/css_preprocessor/6a4695b36502b4457f2650ce.md)
+    - 📁 **layout**
+      - 📄 [解释 CSS Flexbox 中 justify-content 属性的作用和常见用法。](contents/frontend/css/layout/6a469ab66502b4457f2650d1.md)
+      - 📄 [解释 CSS 中的 BFC（块格式化上下文）和 IFC（行内格式化上下文）的概念、作用以及它们之间的区别。](contents/frontend/css/layout/6a469ab66502b4457f2650d0.md)
+      - 📄 [请比较常见的 CSS 布局技术，如双飞翼布局、Flexbox、Grid、圣杯布局和传统浮动布局，并讨论它们的适用场景和优缺点。](contents/frontend/css/layout/6a4695b36502b4457f2650cf.md)
+  - 📁 **javascript**
+    - 📁 **asynchronous**
+      - 📄 [解释 JavaScript Event Loop 机制及其工作原理。](contents/frontend/javascript/asynchronous/6a4647c06502b4457f2650c0.md)
+    - 📁 **network_request**
+      - 📄 [如何封装 FetchAPI 实现请求超时报错，并取消执行中的 Promise？](contents/frontend/javascript/network_request/6a4647c06502b4457f2650c1.md)
+    - 📁 **network_requests**
+      - 📄 [什么是 Axios？它的主要特点、用途以及与原生 Fetch API 的区别是什么？](contents/frontend/javascript/network_requests/6a4714ee6502b4457f2650d3.md)
+    - 📄 [JavaScript 中多态的实现方式](contents/frontend/javascript/6a464b9e6502b4457f2650c6.md)
+    - 📄 [JavaScript 原型链的理解](contents/frontend/javascript/6a464b9e6502b4457f2650c4.md)
+    - 📄 [JavaScript 继承的六种方式及优缺点](contents/frontend/javascript/6a464b9e6502b4457f2650c5.md)
+  - 📁 **performance_optimization**
+    - 📁 **rendering**
+      - 📄 [CSS 的 transform 属性是否会触发 GPU 硬件加速，以及其背后的渲染机制是什么？](contents/frontend/performance_optimization/rendering/6a469ab66502b4457f2650d2.md)
+    - 📄 [前端性能优化的常用方法](contents/frontend/performance_optimization/6a464b9e6502b4457f2650c7.md)
+- 📁 **network**
+  - 📁 **http**
+    - 📁 **cache_mechanism**
+      - 📄 [强缓存和协商缓存的区别](contents/network/http/cache_mechanism/6a464b9e6502b4457f2650c8.md)
+    - 📄 [HTTP/0.9、1.0、1.1、2.0、3.0 各版本的特点及对队头阻塞的解决方案](contents/network/http/6a464b9e6502b4457f2650c9.md)
+    - 📄 [QUIC 协议是否基于 TCP 实现](contents/network/http/6a464b9e6502b4457f2650ca.md)
+- 📁 **software_engineering**
+  - 📁 **geographic_information_system**
+    - 📄 [你在项目中有没有使用过 ArcGIS，具体如何应用？](contents/software_engineering/geographic_information_system/6a4647c06502b4457f2650c2.md)
+  - 📁 **refactoring**
+    - 📄 [如果让你负责网站重构，你会如何规划和执行？](contents/software_engineering/refactoring/6a4647c06502b4457f2650c3.md)
+- 📁 **web_development**
+  - 📁 **network_request**
+    - 📁 **realtime_communication**
+      - 📄 [EventSource 和长轮询的区别](contents/web_development/network_request/realtime_communication/6a46916e6502b4457f2650cc.md)
+    - 📁 **websocket**
+      - 📄 [WebSocket 如何保持长连接](contents/web_development/network_request/websocket/6a46916e6502b4457f2650cd.md)
+  - 📁 **real_time_communication**
+    - 📄 [WebRTC 的主要特点有哪些？](contents/web_development/real_time_communication/6a46779e6502b4457f2650cb.md)
