@@ -3,6 +3,12 @@
 > 本文件由同步脚本自动维护，请勿手动修改。
 
 - 📁 **frontend**
+  - 📁 **browser**
+    - 📁 **performance_scheduling**
+      - 📄 [你是否使用过 `requestIdleCallback`？它的主要作用和应用场景是什么？](contents/frontend/browser/performance_scheduling/6a4738536502b4457f2650d8.md)
+    - 📁 **rendering**
+      - 📄 [`requestAnimationFrame` 的回调函数是否会被 JavaScript 任务阻塞？](contents/frontend/browser/rendering/6a4738536502b4457f2650d6.md)
+      - 📄 [`requestAnimationFrame` 的回调函数是在 DOM 渲染周期的哪个阶段执行？是在 DOM 渲染前还是渲染后？](contents/frontend/browser/rendering/6a4738536502b4457f2650d7.md)
   - 📁 **css**
     - 📁 **css_preprocessor**
       - 📄 [请介绍 Sass 及其主要特性和优势。](contents/frontend/css/css_preprocessor/6a4695b36502b4457f2650ce.md)
@@ -24,6 +30,15 @@
     - 📁 **rendering**
       - 📄 [CSS 的 transform 属性是否会触发 GPU 硬件加速，以及其背后的渲染机制是什么？](contents/frontend/performance_optimization/rendering/6a469ab66502b4457f2650d2.md)
     - 📄 [前端性能优化的常用方法](contents/frontend/performance_optimization/6a464b9e6502b4457f2650c7.md)
+  - 📁 **react**
+    - 📁 **fiber_architecture**
+      - 📄 [在 React Fiber 架构中，`requestAnimationFrame` 和 `requestIdleCallback` 是如何与迭代器结合实现调度与渲染的？](contents/frontend/react/fiber_architecture/6a4738536502b4457f2650d9.md)
+- 📁 **graphics**
+  - 📁 **webgl**
+    - 📁 **rendering_pipeline**
+      - 📄 [请描述 WebGL 的渲染管线流程。](contents/graphics/webgl/rendering_pipeline/6a4738536502b4457f2650d4.md)
+    - 📁 **shaders**
+      - 📄 [请说明顶点着色器和片元着色器的基本应用。](contents/graphics/webgl/shaders/6a4738536502b4457f2650d5.md)
 - 📁 **network**
   - 📁 **http**
     - 📁 **cache_mechanism**
