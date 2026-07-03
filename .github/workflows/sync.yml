@@ -1,0 +1,56 @@
+name: MongoDB Data Sync
+
+on:
+  schedule:
+    # 每 6 小时自动同步一次 (UTC 时间 0点, 6点, 12点, 18点)
+    - cron: '0 */6 * * *'
+  workflow_dispatch:
+    inputs:
+      force_sync:
+        description: 'Force full synchronization (ignore sync_status)'
+        required: false
+        default: false
+        type: boolean
+
+jobs:
+  sync-and-commit:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci || npm install
+
+      - name: Run synchronization script
+        env:
+          MONGODB_URI: ${{ secrets.MONGODB_URI }}
+          DB_NAME: ${{ secrets.DB_NAME || 'interviews' }}
+          COLLECTION_NAME: ${{ secrets.COLLECTION_NAME || 'parser_data' }}
+          FORCE_SYNC: ${{ github.event.inputs.force_sync || 'false' }}
+        run: node scripts/sync.js
+
+      - name: Commit and push changes
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          
+          # 添加新生成的文件和更新的大纲目录
+          git add .
+          
+          # 检查是否有文件更改需要提交
+          if ! git diff --cached --quiet; then
+            git commit -m "chore: auto-sync data from MongoDB"
+            git push origin main
+          else
+            echo "No changes detected. Skipping commit."
+          fi

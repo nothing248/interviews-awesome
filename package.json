@@ -1,0 +1,13 @@
+{
+  "name": "interviews-awesome-sync",
+  "version": "1.0.0",
+  "description": "Sync interview parser data from MongoDB to GitHub repository",
+  "main": "scripts/sync.js",
+  "type": "module",
+  "scripts": {
+    "sync": "node scripts/sync.js"
+  },
+  "dependencies": {
+    "mongodb": "^6.5.0"
+  }
+}
