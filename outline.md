@@ -2,6 +2,12 @@
 
 > 本文件由同步脚本自动维护，请勿手动修改。
 
+- 📁 **ai**
+  - 📁 **agent_systems**
+    - 📁 **skill_vs_tool**
+      - 📄 [在AI Agent 设计中，技能（Skill）能否完全替代工具（Tool）？请解释其异同与原因。](contents/ai/agent_systems/skill_vs_tool/6a5328b72653febd13bd0620.md)
+    - 📁 **tool_calling**
+      - 📄 [AI Agent 中工具（Tool）调用的具体流程是怎样的？](contents/ai/agent_systems/tool_calling/6a5328b72653febd13bd061f.md)
 - 📁 **frontend**
   - 📁 **browser**
     - 📁 **performance_scheduling**
